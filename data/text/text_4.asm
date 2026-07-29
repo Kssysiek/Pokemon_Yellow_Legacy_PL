@@ -1,71 +1,67 @@
 _FileDataDestroyedText::
-	text "The file data is"
-	line "destroyed!"
+	text "Dane pliku zostaną"
+	line "skasowane!"
 	prompt
 
-; _WouldYouLikeToSaveText::
-; 	text "Would you like to"
-; 	line "SAVE the game?"
-; 	done
-
-; _SavingText::
-; 	text "Saving..."
-; 	done
+_WouldYouLikeToSaveText::
+	text "Czy chcesz ZAPISAĆ"
+	line "grę?"
+	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "<PLAYER> zapisuje"
+	line "grę!"
 	done
 
 _OlderFileWillBeErasedText::
-	text "The older file"
-	line "will be erased to"
-	cont "save. Okay?"
+	text "Starszy plik"
+	line "zapisu zostanie"
+	cont "usunięty. OK?"
 	done
 
 _WhenYouChangeBoxText::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved."
+	text "Gdy zmienisz BOX"
+	line "#MONÓW, dane"
+	cont "zostaną zapisane."
 
-	para "Is that okay?"
+	para "Zgadzasz się?"
 	done
 
 _ChooseABoxText::
-	text "Choose a"
-	line "<PKMN> BOX.@"
+	text "Wybierz BOX"
+	line "#MONÓW.@"
 	text_end
 
 _EvolvedText::
 	text_ram wStringBuffer
-	text " evolved"
+	text " stał"
 	done
 
 _IntoText::
 	text_start
-	line "into @"
+	line "się @"
 	text_ram wcd6d
 	text "!"
 	done
 
 _StoppedEvolvingText::
-	text "Huh? @"
+	text "Hę? @"
 	text_ram wStringBuffer
 	text_start
-	line "stopped evolving!"
+	line "PRZERWANO!"
 	prompt
 
 _SortItemsText::
-	text "Would you like to"
-	next "sort items?"
+	text "Posortować"
+	next "przedmioty?"
 	done
 
 _SortComplete::
-	text "Sorting is"
-	next "complete."
+	text "Sortowanie"
+	next "zakończione."
 	prompt
 
 _NothingToSort::
-	text "There is nothing"
-	next "to sort."
+	text "Nie ma czego"
+	next "sortować."
 	prompt
