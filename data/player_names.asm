@@ -1,20 +1,20 @@
 DefaultNamesPlayer:
-	db   "NEW NAME"
-	next "YELLOW"
+	db   "WŁASNE"
+	next "RED"
 	next "ASH"
-	next "JACK"
+	next "GABRIEL"
 	db   "@"
 
 DefaultNamesGirl:
-	db   "NEW NAME"
+	db   "WŁASNE"
 	next "GREEN"
 	next "LEAF"
-	next "AMANDA"
+	next "ADELA"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "WŁASNE"
 	next "BLUE"
 	next "GARY"
-	next "JOHN"
+	next "JANEK"
 	db   "@"
