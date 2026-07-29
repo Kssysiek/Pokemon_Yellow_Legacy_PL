@@ -148,18 +148,39 @@
 	charmap "z",         $b9
 
 	charmap "é",         $ba
-	charmap "'d",        $bb
-	charmap "'l",        $bc
-	charmap "'s",        $bd
-	charmap "'t",        $be
-	charmap "'v",        $bf
+
+	charmap "<WZ>",      $bb ; WZROST
+	charmap "<RO>",      $bc ; WZROST
+	charmap "<ST>",      $bd ; WZROST
+	charmap "<WA>",      $be ; WAGA
+	charmap "<GA>",      $bf ; WAGA
+
+	charmap "ą",         $c0
+	charmap "ć",         $c1
+	charmap "ę",         $c2
+	charmap "ł",         $c3
+	charmap "ń",         $c4
+	charmap "ó",         $c5
+	charmap "ś",         $c6
+	charmap "ź",         $c7
+	charmap "ż",         $c8
+
+	charmap "Ą",         $c9
+	charmap "Ć",         $ca
+	charmap "Ę",         $cb
+	charmap "Ł",         $cc
+	charmap "Ń",         $cd
+	charmap "Ó",         $ce
+	charmap "Ś",         $cf
+	charmap "Ź",         $d0
+	charmap "Ż",         $d1
 
 	charmap "'",         $e0
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
 	charmap "-",         $e3
 
-	charmap "'r",        $e4
+	charmap "...",       $e4
 	charmap "'m",        $e5
 
 	charmap "?",         $e6
