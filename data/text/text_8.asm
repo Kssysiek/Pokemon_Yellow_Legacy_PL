@@ -1,138 +1,129 @@
 _CableClubNPCPleaseWaitText::
-	text "Please wait.@"
+	text "Proszę czekać.@"
 	text_end
 
 _CableClubNPCLinkClosedBecauseOfInactivityText::
 	vc_patch Change_link_closed_inactivity_message
 IF DEF(_YELLOW_VC)
-	text "Please come again!"
+	text "Zapraszamy"
+	line "ponownie!"
 	done
-	text_start
-	text "sed because of"
-	cont "inactivity."
 ELSE
-	text "The link has been"
-	line "closed because of"
-	cont "inactivity."
+	text "Zakończono połą-"
+	line "czenie z powodu"
+	cont "braku aktywności."
 ENDC
 	vc_patch_end
 
-	para "Please contact"
-	line "your friend and"
-	cont "come again!"
+	para "Skontaktuj się z"
+	line "przyjacielem i"
+	cont "przyjdź ponownie!"
 	done
 
 _CableClubNPCPleaseComeAgainText::
-	text "Please come again!"
+	text "Zapraszamy"
+	line "ponownie!"
 	done
 
 _CableClubNPCMakingPreparationsText::
-	text "We're making"
-	line "preparations."
-	cont "Please wait."
+	text "Jesteśmy w trakcie"
+	line "przygotowań."
+	cont "Proszę poczekać."
 	done
 
 _FlashLightsAreaText::
-	text "A blinding FLASH"
-	line "lights the area!"
+	text "BŁYSK rozświetla"
+	line "cały obszar!"
 	prompt
 
 _WarpToLastPokemonCenterText::
-	text "Warp to the last"
-	line "#MON CENTER."
+	text "Przenoszenie do"
+	line "ostatniego"
+	cont "CENTRUM #MON."
 	done
 
 _CannotUseTeleportNowText::
 	text_ram wcd6d
-	text " can't"
-	line "use TELEPORT now."
+	text " nie"
+	line "może tutaj użyć"
+	cont "TELEPORTACJI."
 	prompt
 
 _CannotFlyHereText::
 	text_ram wcd6d
-	text " can't"
-	line "FLY here."
+	text " nie"
+	line "może tutaj LATAĆ."
 	prompt
 
 _NotHealthyEnoughText::
-	text "Not healthy"
-	line "enough."
+	text "Za mało zdrowia."
 	prompt
 
 _NewBadgeRequiredText::
-	text "No! A new BADGE"
-	line "is required."
+	text "Nie! Wymagana"
+	line "nowa ODZNAKA."
 	prompt
 
 _CannotUseItemsHereText::
-	text "You can't use items"
-	line "here."
+	text "Nie możesz używać"
+	line "tu przedmiotów."
 	prompt
 
 _CannotGetOffHereText::
-	text "You can't get off"
-	line "here."
+	text "Nie możesz tu"
+	line "wysiąść."
 	prompt
 
 _UsedStrengthText::
 	text_ram wcd6d
-	text " used"
-	line "STRENGTH.@"
+	text " używa"
+	line "SIŁY.@"
 	text_end
 
 _CanMoveBouldersText::
 	text_ram wcd6d
-	text " can"
-	line "move boulders."
-	done
+	text " może"
+	line "przesuwać głazy."
+	prompt
 
 _CurrentTooFastText::
-	text "The current is"
-	line "much too fast!"
+	text "Prąd jest za"
+	line "szybki!"
 	prompt
 
 _CyclingIsFunText::
-	text "Cycling is fun!"
-	line "Forget SURFing!"
+	text "Rowery są fajne!"
+	line "Zapomnij o"
+	cont "SURFOWANIU!"
 	prompt
 
 _GotMonText::
-	text "<PLAYER> got"
+	text "<PLAYER> otrzymuje"
 	line "@"
 	text_ram wcd6d
 	text "!@"
 	text_end
 
 _SentToBoxText::
-	text "There's no more"
-	line "room for #MON!"
+	text "Nie ma miejsca na"
+	line "#MONA!"
 	cont "@"
 	text_ram wBoxMonNicks
-	text " was"
-	cont "sent to #MON"
-	cont "BOX @"
+	text " został"
+	cont "wysłany do BOXU"
+	cont "#MON @"
 	text_ram wStringBuffer
-	text " on PC!"
+	text " w PC!"
 	done
 
 _BoxIsFullText::
-	text "There's no more"
-	line "room for #MON!"
+	text "Nie ma miejsca na"
+	line "#MONA!"
 
-	para "The #MON BOX"
-	line "is full and can't"
-	cont "accept any more!"
+	para "BOX #MON jest"
+	line "pełny i nie może"
+	cont "przyjąć więcej!"
 
-	para "Change the BOX at"
-	line "a #MON CENTER!"
+	para "Zmień BOX w"
+	line "CENTRUM #MON!"
 	done
-
-_BoxIsFullReminderText::
-	text "The #MON BOX"
-	line "is now full."
-	cont "It won't hold"
-	cont "more #MON."
-
-	para "Change the BOX at"
-	line "a #MON CENTER!"
-	prompt
