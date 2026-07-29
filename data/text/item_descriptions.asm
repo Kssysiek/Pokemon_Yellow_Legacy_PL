@@ -81,7 +81,7 @@ _SuperPotionDescription::
 	prompt
 
 _PotionDescription::
-	text "Przywraca 20 PŻ
+	text "Przywraca 20 PŻ"
 	prompt
 
 _EscapeRopeDescription::
